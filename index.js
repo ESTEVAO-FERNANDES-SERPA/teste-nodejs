@@ -31,7 +31,21 @@ app.get('/', (req, res) => {
 })
 app.get('/posts',(req, res) => { 
     res.render('posts',{
-        title:'Digital Tech - Posts'
+        title:'Digital Tech - Posts',
+        posts:[
+            {
+                title:'Novidades no mundo da tecnologia',
+                text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. A sunt eos suscipit optio, necessitatibus deleniti sint libero voluptate illo enim, officia debitis, eveniet accusamus porro? Voluptatum dolorum quae impedit fugiat.'
+            },
+            {
+                title:'Criando um servidor com nodejs',
+                text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. A sunt eos suscipit optio, necessitatibus deleniti sint libero voluptate illo enim, officia debitis, eveniet accusamus porro? Voluptatum dolorum quae impedit fugiat.'
+            },
+            {
+                title:'JS é legal',
+                text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. A sunt eos suscipit optio, necessitatibus deleniti sint libero voluptate illo enim, officia debitis, eveniet accusamus porro? Voluptatum dolorum quae impedit fugiat.'
+            }
+        ]
     })
 })
 
