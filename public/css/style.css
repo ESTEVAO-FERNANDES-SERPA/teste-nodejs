@@ -55,16 +55,31 @@
   
   .content {
     width: 80%;
-    height: 60vh;
+    
+    background: #f1f1f1;
+    box-shadow: 2px 2px 0 rgb(228, 228, 228);
+    padding: 30px 30px;
+    border-radius: 40px 0;
+    margin: 20px 20px 20px 0;
+    
+  }
+
+  .posts{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
     background: #f1f1f1;
     box-shadow: 2px 2px 0 rgb(228, 228, 228);
     padding: 30px 30px;
     border-radius: 40px 0;
     margin: 20px 20px 20px 0;
   }
+.posts div{
+  padding: 20px;
+}
   
   .footer {
-    position: absolute;
+    
     bottom: 0;
     left: 0;
     width: 100%;
@@ -73,4 +88,5 @@
     color: rgb(109, 86, 211);
     text-align: center;
     padding: 20px 0;
+    
   }

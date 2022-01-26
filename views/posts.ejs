@@ -14,8 +14,14 @@
       <div class="posts">
         <% posts.forEach((item) => { %>
           <div class="post">
+           <% if(item.star){%>
+            <% for( let index = 0; index < item.star; index++ ) { %>
+              <img src="https://cdn-icons-png.flaticon.com/512/5641/5641997.png" width="20px" alt="">
+            <% } %>
+            <% } %>
             <h3><%= item.title %></h3>
             <p><%= item.text %></p>
+            
           </div>
         <% }); %>
       </div>
